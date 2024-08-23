@@ -199,10 +199,17 @@
     </div>
 
     <script>
-        // Function to calculate days passed since a given date
+        // Function to calculate days passed since a given date, accounting for British Summer Time (BST)
         function daysPassed(startDate) {
             const currentDate = new Date();
-            const timeDifference = currentDate - startDate;
+
+            // Get the timezone offset in minutes and convert to milliseconds
+            const currentOffset = currentDate.getTimezoneOffset() * 60 * 1000;
+            const startOffset = startDate.getTimezoneOffset() * 60 * 1000;
+
+            // Calculate the time difference, including the offset difference
+            const timeDifference = (currentDate - currentDate.getTimezoneOffset() * 60 * 1000) - (startDate - startOffset);
+
             return Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         }
 
