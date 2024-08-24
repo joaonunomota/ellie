@@ -217,10 +217,6 @@
         function daysPassed(startDate) {
             const currentDate = new Date();
 
-            // Get the timezone offset in minutes and convert to milliseconds
-            const currentOffset = currentDate.getTimezoneOffset() * 60 * 1000;
-            const startOffset = startDate.getTimezoneOffset() * 60 * 1000;
-
             // Calculate the time difference, including the offset difference
             const timeDifference = (currentDate - currentDate.getTimezoneOffset() * 60 * 1000) - (startDate - startOffset);
 
@@ -228,7 +224,7 @@
         }
 
         // Base date (August 23, 2024)
-        const baseDate = new Date('2024-08-22');
+        const baseDate = new Date('2024-08-23');
 
         // Days when each poem will be revealed
         const revealDays = [
