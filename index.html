@@ -218,7 +218,7 @@
             const currentDate = new Date();
 
             // Calculate the time difference, including the offset difference
-            const timeDifference = (currentDate - currentDate.getTimezoneOffset() * 60 * 1000) - (startDate - startOffset);
+            const timeDifference = (currentDate - currentDate.getTimezoneOffset() * 60 * 1000) - startDate;
 
             return Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         }
