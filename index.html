@@ -92,7 +92,7 @@
     </style>
 </head>
 <body>
-    <h1>Ellie's Translated Poems</h1>https://poemsfromtheportuguese.org/about/
+    <h1>Ellie's Translated Poems</h1>
     
     <!-- Poem 32 -->
     <div id="poem32" class="poem">
@@ -117,7 +117,7 @@
     </div>
     
     <!-- Poem 10 - Surprise! -->
-    <div id="poem10" class="poem">
+    <div id="poem10surprise" class="poem">
         <div class="poem-header">
             <h2>Lisbon Revisited - Dias de Poesia (2023)</h2>
             <span class="date">Sept 1, 2024</span>
@@ -649,6 +649,7 @@
         for (let i = 0; i < revealDays.length; i++) {
             if (daysPassed(baseDate) >= revealDays[i]) {
                 document.getElementById('poem' + (i + 1)).style.display = 'block';
+                document.getElementById('poem' + (i + 1) + 'surprise').style.display = 'block';
             }
         }
     </script>
