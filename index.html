@@ -14,7 +14,7 @@
             background-color: #ffe6e6; /* Light pastel pink background */
             color: #333; /* Darker color for text for contrast */
         }
-
+        
         .poem {
             margin: 20px 0;
             padding: 20px;
@@ -29,42 +29,42 @@
             border-radius: 15px; /* Rounded corners */
             transition: all 0.3s ease; /* Smooth transition for resizing */
         }
-
+        
         .poem-header {
             display: flex;
             justify-content: space-between;
             align-items: start;
             margin-bottom: 10px;
         }
-
+        
         .poem-header h2 {
             margin: 0;
             padding: 0;
         }
-
+        
         .poem .date {
             font-size: 0.9em;
             color: #aa6f8f; /* Softer color for the date */
         }
-
+        
         h1 {
             margin-bottom: 40px;
             text-align: center;
             color: #cc6699; /* Darker pastel pink for the heading */
         }
-
+        
         .author {
             font-size: 0.9em;
             color: #aa6f8f; /* Softer, complementary color for the author text */
             margin-top: -10px;
             margin-bottom: 10px;
         }
-
+        
         .buttons {
             text-align: right;
             margin-top: 10px;
         }
-
+        
         .buttons span {
             cursor: pointer;
             color: #0066cc;
@@ -72,22 +72,29 @@
             margin-left: 0; /* Remove left margin */
             padding: 0 5px; /* Add some padding for better click area */
         }
-
+        
         .buttons span:last-child {
             padding-right: 0; /* Remove padding on the right for the last span */
         }
-
+        
         .buttons span:hover {
             color: #004c99; /* Darker color on hover */
         }
-
+        
         .poem-portuguese {
             display: none; /* Initially hide the Portuguese version */
         }
-
+        
         span.pre {
             all: unset;
             whitespace: pre;
+        }
+        
+        .author-notes {
+            font-size: 0.9em;
+            color: #888; /* Light gray color */
+            font-style: italic; /* Italicized text */
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -181,6 +188,13 @@
                 Negros ou brancos, brancos ou mestiços,<br>
                 Se somos portugueses<br>
                 Que importa, pois?
+            </p>
+        </div>
+        <div>
+            <p class="author-notes">
+                This poem was published in 1967 as part of Ivuenu! (Listen!) and was awarded the prize "Prémio Camilo Pessanha" from the Agência Geral do Ultramar.
+                The poem conveys an ideology that was in perfect harmony with the politics and discourse of the Estado Novo that sought to paint Portugal as one
+                whole, not colonizer and its colonies.
             </p>
         </div>
         <div class="buttons">
